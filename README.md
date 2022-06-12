@@ -5,13 +5,11 @@ commonly used to expose Machine Learning (ML)  models to other services. This fo
 created using Flask to expose the YOLOv5s model from [PyTorch Hub](https://pytorch.org/hub/ultralytics_yolov5/).
 
 ## Requirements
-- [Pytorch](https://pytorch.org) >= 1.6. 
-- [Pillow](https://pypi.org/project/Pillow/)
-- [Flask](https://palletsprojects.com/p/flask/)
-
-Install Pytorch with instruction in https://pytorch.org. Then, install the rest with: 
+Install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a
+[**Python>=3.7.0**](https://www.python.org/) environment, including
+[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
 ```shell
-$ pip install Flask Pillow
+$ pip install -r requirements.txt
 ```
 
 ## Run
