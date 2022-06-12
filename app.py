@@ -53,17 +53,17 @@ def predict_gui():
     return render_template("index.html")
 
 
-@app.route(DETECTION_URL, methods=["POST"])
-def predict():
-    if request.method != "POST":
-        return
+# @app.route(DETECTION_URL, methods=["POST"])
+# def predict():
+#     if request.method != "POST":
+#         return
 
-    if request.files.get("image"):
-        im_file = request.files["image"]
-        im_bytes = im_file.read()
-        results = get_prediction(im_bytes)
-        save_result(results)
-        return results.pandas().xyxy[0].to_json(orient="records")
+#     if request.files.get("image"):
+#         im_file = request.files["image"]
+#         im_bytes = im_file.read()
+#         results = get_prediction(im_bytes)
+#         save_result(results)
+#         return results.pandas().xyxy[0].to_json(orient="records")
 
 
 if __name__ == "__main__":
