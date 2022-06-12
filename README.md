@@ -45,8 +45,8 @@ The model inference results are returned as a JSON response:
 
 ## Reference
 - [YOLOv5 Flask REST API](https://github.com/ultralytics/yolov5/tree/master/utils/flask_rest_api)
-- https://github.com/jzhang533/yolov5-flask
+- [Yolov5 Flask @jzhang533](https://github.com/jzhang533/yolov5-flask)
 - [Load YOLOv5 from PyTorch Hub ](https://github.com/ultralytics/yolov5/issues/36)
-- https://github.com/avinassh/pytorch-flask-api-heroku
+- [Pytorch Flask API Heroku @avinassh](https://github.com/avinassh/pytorch-flask-api-heroku)
 
 Note: The best.pt provided is self-trained yolov5 model on cats and dogs dataset.
