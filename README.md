@@ -45,6 +45,9 @@ The model inference results are returned as a JSON response:
 [{"xmin":384.2033081055,"ymin":35.8358840942,"xmax":823.404296875,"ymax":409.2363891602,"confidence":0.8502380848,"class":0,"name":"cat"}]
 ```
 
+## Example
+![example.gif](./images/example.gif)
+
 ## Reference
 - [YOLOv5 Flask REST API](https://github.com/ultralytics/yolov5/tree/master/utils/flask_rest_api)
 - [Yolov5 Flask @jzhang533](https://github.com/jzhang533/yolov5-flask)
