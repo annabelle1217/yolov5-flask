@@ -15,10 +15,14 @@ $ pip install -r requirements.txt
 ## Run
 
 After Flask installation run:
-
 ```shell
-$ python app.py --model yolov5
+$ export FLASK_ENV=development && flask run
 ```
+or
+```shell
+$ python app.py
+```
+
 To use custom model:
 ```shell
 $ python app.py --model best.pt

@@ -7,13 +7,18 @@ from pathlib import Path
 import sys
 import argparse
 
+app = Flask(__name__)
+DETECTION_URL = "/v1/object-detection/yolov5s"
+
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # current directory
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 
-app = Flask(__name__)
-DETECTION_URL = "/v1/object-detection/yolov5s"
+model = torch.hub.load(
+            "ultralytics/yolov5", "yolov5s", pretrained=True, force_reload=True
+        )
+model.eval()
 
 
 def get_prediction(img_bytes):
